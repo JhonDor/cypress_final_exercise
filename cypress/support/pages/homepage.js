@@ -1,4 +1,4 @@
-var pageLocators = {
+let pageLocators = {
     carousel: 'div#carouselExampleIndicators',
     carouselRightArrow:'.carousel-control-next',
     carouselLeftArrow:'.carousel-control-prev',

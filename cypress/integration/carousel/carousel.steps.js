@@ -2,7 +2,7 @@ import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import HomePage from "../../support/pages/homepage";
 const homepage = new HomePage();
 
-Given("I visit the homepage", () => {
+Given("I visit the Homepage", () => {
   cy.visit("/");
 });
 
@@ -16,8 +16,6 @@ When("I click the right arrow", () => {
 });
 
 Then("The next image should be displayed", () => {
-  //homepage.carousel().invoke('index').should('eq', 1);
-  //homepage.carouselImage(1).should('have.class', 'active');
   homepage.carouselImage().eq(1).should("have.class", "active");
 });
 
