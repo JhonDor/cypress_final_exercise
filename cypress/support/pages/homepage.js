@@ -5,7 +5,7 @@ let pageLocators = {
     carouselImages:'.carousel-item',
     carouselImage2:'.carousel-inner :nth-child(2)',
     carouselIndicators:'.carousel-indicators li',
-    laptopsLink:'.list-group-item:contains("Laptops")',
+    categories:'#itemc.list-group-item',
     firstProduct:'#tbodyid >:nth-child(1) .card-img-top',
   }
 
@@ -28,8 +28,8 @@ let pageLocators = {
       return cy.get(pageLocators.carouselIndicators);;
     }
 
-    laptopsLink() {
-      return cy.get(pageLocators.laptopsLink);;
+    categoryByIndex(index) {
+      return cy.get(pageLocators.categories).eq(index);;
     }
 
     firstProduct() {
@@ -60,4 +60,4 @@ let pageLocators = {
       return this.firstProduct().scrollIntoView();
     }
   } 
-  export default HomePage;  
+  export default new HomePage();  

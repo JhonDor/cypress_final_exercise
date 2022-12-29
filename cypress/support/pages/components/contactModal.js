@@ -11,4 +11,4 @@ let pageLocators = {
     
     
   } 
-  export default ContactModal;  
+  export default new ContactModal();  

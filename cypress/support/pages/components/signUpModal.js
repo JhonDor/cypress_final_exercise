@@ -6,4 +6,4 @@ let pageLocators = {
       return cy.get(pageLocators.modalTitle);
     }
   }
-  export default SignUpModal;
+  export default new SignUpModal();

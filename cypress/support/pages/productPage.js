@@ -2,6 +2,7 @@ let pageLocators = {
   productName: ".product-content .name",
   productPrice: ".product-content .price-container",
   addToCartButton: ".btn-lg",
+ 
 };
 class ProductPage {
   productName() {
@@ -18,4 +19,4 @@ class ProductPage {
     return this.addToCartButton().click();
   }
 }
-export default ProductPage;
+export default new ProductPage();

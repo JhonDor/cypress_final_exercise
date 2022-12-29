@@ -1,4 +1,4 @@
 {"baseUrl": "https://www.demoblaze.com",
 "testFiles": "**/*.feature",
-"defaultCommandTimeout": 30000
+"defaultCommandTimeout": 10000
 }

@@ -53,4 +53,4 @@ class Header {
     return this.carouselIndicators().eq(index).click();
   }
 }
-export default Header;
+export default new Header();

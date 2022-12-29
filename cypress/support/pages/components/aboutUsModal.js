@@ -11,4 +11,4 @@ let pageLocators = {
     
     
   } 
-  export default aboutUsModal;  
+  export default new aboutUsModal();  

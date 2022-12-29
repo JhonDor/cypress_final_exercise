@@ -6,4 +6,4 @@ class LogInModal {
     return cy.get(pageLocators.modalTitle);
   }
 }
-export default LogInModal;
+export default new LogInModal();
