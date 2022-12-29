@@ -3,6 +3,7 @@
   "categories": "https://api.demoblaze.com/bycat",
   "addProductToShoppingCart": "https://api.demoblaze.com/addtocart",
   "shoppingCart": "https://api.demoblaze.com/view",
-  "viewCart": "https://api.demoblaze.com/viewcart"
+  "viewCart": "https://api.demoblaze.com/viewcart",
+  "deleteProduct":"https://api.demoblaze.com/deleteitem"
 }
 
