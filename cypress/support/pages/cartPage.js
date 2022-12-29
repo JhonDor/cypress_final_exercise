@@ -1,8 +1,9 @@
 let pageLocators = {
-    productsTable:'.table-responsive .table',
+    productsTable:".table-responsive .table",
+    productsOnCart:"tr.success"
     
   }
-  class Cart {
+  class CartPage {
 
     productsTable(){
         return cy.get(pageLocators.productsTable);
@@ -24,6 +25,10 @@ let pageLocators = {
     clickcOnIndicator(index) {
       return this.carouselIndicators().eq(index).click();
     }
+
+    getProductsOnCart(){
+      return cy.get(pageLocators.productsOnCart);
+    }
     
   } 
-  export default Cart;  
+  export default CartPage;  

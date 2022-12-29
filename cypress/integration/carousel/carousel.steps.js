@@ -7,12 +7,11 @@ Given("I visit the Homepage", () => {
 });
 
 Then("the carousel should be displayed", () => {
-    homepage.carousel().should("be.visible");
-  });
+  homepage.carousel().should("be.visible");
+});
 
 When("I click the right arrow", () => {
   homepage.clickcarouselRightArrow();
-  //cy.wait(3000)
 });
 
 Then("The next image should be displayed", () => {
@@ -21,7 +20,6 @@ Then("The next image should be displayed", () => {
 
 When("I click the left arrow", () => {
   homepage.clickcarouselLeftArrow();
-  
 });
 
 Then("The previous image should be displayed", () => {
@@ -29,9 +27,8 @@ Then("The previous image should be displayed", () => {
 });
 
 When("I click the third indicator on the bottom of the image", () => {
-    homepage.clickcOnIndicator(2);
-    
-  });
-  Then("the third image should be displayed", () => {
-    homepage.carouselImage().eq(2).should("have.class", "active");
-  });
+  homepage.clickcOnIndicator(2);
+});
+Then("the third image should be displayed", () => {
+  homepage.carouselImage().eq(2).should("have.class", "active");
+});

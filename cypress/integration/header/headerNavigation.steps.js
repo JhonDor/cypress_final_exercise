@@ -1,7 +1,7 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import Header from "../../support/pages/components/header";
 import HomePage from "../../support/pages/homepage";
-import CartPage from "../../support/pages/cart";
+import CartPage from "../../support/pages/cartPage";
 import ContactModal from "../../support/pages/components/contactModal";
 import AboutUsModal from "../../support/pages/components/aboutUsModal";
 import LogInModal from "../../support/pages/components/logInModal";
@@ -76,3 +76,5 @@ Given("I visit the Cart page", () => {
   Then("the Sign up modal should be displayed", () => {
     signUpModal.modalTitle().should("be.visible");
   });
+
+ 

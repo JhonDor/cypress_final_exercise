@@ -4,11 +4,12 @@ let pageLocators = {
     carouselLeftArrow:'.carousel-control-prev',
     carouselImages:'.carousel-item',
     carouselImage2:'.carousel-inner :nth-child(2)',
-    carouselIndicators:'.carousel-indicators li'
-
-
-    
+    carouselIndicators:'.carousel-indicators li',
+    laptopsLink:'.list-group-item:contains("Laptops")',
+    firstProduct:'#tbodyid >:nth-child(1) .card-img-top',
   }
+
+
   class HomePage {
     carousel(){
       return cy.get(pageLocators.carousel);
@@ -26,6 +27,15 @@ let pageLocators = {
     carouselIndicators() {
       return cy.get(pageLocators.carouselIndicators);;
     }
+
+    laptopsLink() {
+      return cy.get(pageLocators.laptopsLink);;
+    }
+
+    firstProduct() {
+      return cy.get(pageLocators.firstProduct);;
+    }
+
     clickcarouselRightArrow() {
       return this.carouselRightArrow().click();
     }
@@ -38,5 +48,16 @@ let pageLocators = {
       return this.carouselIndicators().eq(index).click();
     }
     
+    clickcOnLaptopsLink() {
+      return this.laptopsLink().click();
+    }
+
+    clickcOnFirstProduct() {
+      return this.firstProduct().click();
+    }
+
+    scrollToProducts(){
+      return this.firstProduct().scrollIntoView();
+    }
   } 
   export default HomePage;  
