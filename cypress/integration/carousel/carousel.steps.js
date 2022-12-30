@@ -26,7 +26,22 @@ Then("The previous image should be displayed", () => {
   HomePage.carouselImage().eq(2).should("have.class", "active");
 });
 
-When("I click the third indicator on the bottom of the image", () => {
+When("I click on the first indicator on the bottom of the image when the first image is not visible", () => {
+  HomePage.clickcarouselLeftArrow();
+  HomePage.clickcOnIndicator(0);
+});
+
+Then("the first image should be displayed", () => {
+  HomePage.carouselImage().eq(0).should("have.class", "active");
+});
+
+When("I click on the second indicator on the bottom of the image", () => {
+  HomePage.clickcOnIndicator(1);
+});
+Then("the second image should be displayed", () => {
+  HomePage.carouselImage().eq(1).should("have.class", "active");
+});
+When("I click on the third indicator on the bottom of the image", () => {
   HomePage.clickcOnIndicator(2);
 });
 Then("the third image should be displayed", () => {
