@@ -7,7 +7,10 @@
     "open": "npx cypress open",
     "regression": "npx cypress run -e TAGS=@regression",
     "smoke": "npx cypress run -e TAGS=@smoke",
-    "sanity": "npx cypress run -e TAGS=@sanity"
+    "sanity": "npx cypress run -e TAGS=@sanity",
+    "headless": "npx cypress run",
+    "allure": "npx cypress run --env allure=true",
+    "allure:results": "allure serve allure-results/"
   },
   "keywords": [],
   "author": "",

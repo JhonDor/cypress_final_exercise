@@ -7,7 +7,7 @@ import AboutUsModal from "../../support/pages/components/aboutUsModal";
 import LogInModal from "../../support/pages/components/logInModal";
 import SignUpModal from "../../support/pages/components/signUpModal";
 
-Given("I visit the Homepage", () => {
+Given("I visit the Homepage of demoblaze.com", () => {
   cy.visit("/");
 });
 

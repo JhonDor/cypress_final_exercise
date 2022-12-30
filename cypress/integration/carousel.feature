@@ -5,7 +5,7 @@ Feature: Verify the carousel is working
     I want verify the carousel is working correctly
 
     Background:
-        Given I visit the Homepage
+        Given I visit the Homepage of demoblaze.com
 
 @regression @sanity @carousel 
     Scenario: Verify the right arrow in the carrousel is working

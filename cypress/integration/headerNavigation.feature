@@ -4,7 +4,7 @@ Feature: Verify the header navigation is working
     I want verify all the links in the header are workin
 
     Background:
-        Given I visit the Homepage
+        Given I visit the Homepage of demoblaze.com
 
 @regression @smoke @headerNavigation
     Scenario: verify the cart link is working

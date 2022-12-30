@@ -5,7 +5,7 @@ import HomePage from "../../support/pages/homePage";
 import ProductPage from "../../support/pages/productPage";
 import CartPage from "../../support/pages/cartPage";
 
-Given("I visit the Homepage", () => {
+Given("I visit the Homepage of demoblaze.com", () => {
   cy.visit("/");
 });
 

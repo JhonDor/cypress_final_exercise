@@ -5,7 +5,7 @@ Feature: Verify selection is working
     removing a prodcut from the cart
 
     Background:
-        Given I visit the Homepage
+        Given I visit the Homepage of demoblaze.com
         
 @regression @smoke @products
     Scenario: verify the phones category selection is working
@@ -35,7 +35,7 @@ Feature: Verify selection is working
         When I click the Place Order button
         Then I should be able to purchase the products in my cart
 
-    @regression @smoke @products @deleteproducts
+@regression @smoke @products @deleteproducts
     Scenario: Deleting product from the my cart
         Given I add a product to my cart
         And I am in the cart page

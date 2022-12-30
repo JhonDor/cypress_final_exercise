@@ -2,7 +2,7 @@ import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import HomePage from "../../support/pages/homePage";
 
 
-Given("I visit the Homepage", () => {
+Given("I visit the Homepage of demoblaze.com", () => {
   cy.visit("/");
 });
 
