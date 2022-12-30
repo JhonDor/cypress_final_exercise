@@ -5,10 +5,6 @@ import HomePage from "../../support/pages/homePage";
 import ProductPage from "../../support/pages/productPage";
 import CartPage from "../../support/pages/cartPage";
 
-Given("I visit the Homepage of demoblaze.com", () => {
-  cy.visit("/");
-});
-
 When("I click the Phones category", () => {
   cy.fixture("services").as("services");
   cy.get("@services").then((services) => {
@@ -79,7 +75,7 @@ Then("All the monitors should be displayed", () => {
 });
 When("I click on the first product", () => {
   HomePage.firstProduct().scrollIntoView();
-  HomePage.clickcOnFirstProduct();
+  HomePage.clickOnFirstProduct();
 });
 
 Then("the product page should be visible", () => {
@@ -87,12 +83,8 @@ Then("the product page should be visible", () => {
   ProductPage.productPrice().should("be.visible");
 });
 
-Given("I scroll to the bottom of the Homepage", () => {
-  HomePage.scrollToProducts();
-});
-
 Given("I click on the first product", () => {
-  HomePage.clickcOnFirstProduct();
+  HomePage.clickOnFirstProduct();
 });
 
 When("I click on the Add to cart button", () => {
@@ -109,13 +101,13 @@ Then(
 );
 
 Given("I add a product to my cart", () => {
-  HomePage.clickcOnFirstProduct();
+  HomePage.clickOnFirstProduct();
   ProductPage.addToCartButton().click();
 });
 
-When("I go to the cart page", () => {
+/*When("I go to the cart page", () => {
   Header.clickCartLink();
-});
+});*/
 
 Then("the product should be in my cart", () => {
   CartPage.getProductsOnCart().its("length").should("eq", 1);

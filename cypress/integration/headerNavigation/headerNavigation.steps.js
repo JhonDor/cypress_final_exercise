@@ -7,16 +7,13 @@ import AboutUsModal from "../../support/pages/components/aboutUsModal";
 import LogInModal from "../../support/pages/components/logInModal";
 import SignUpModal from "../../support/pages/components/signUpModal";
 
-Given("I visit the Homepage of demoblaze.com", () => {
-  cy.visit("/");
-});
 
 Given("I visit the Cart page", () => {
     cy.visit("/cart.html");
   });
   
   
-  When("I click in the Home link", () => {
+When("I click in the Home link", () => {
     Header.clickHomeLink();
     
   });
@@ -25,10 +22,7 @@ Given("I visit the Cart page", () => {
     HomePage.carousel().should("be.visible");
   });
 
-  When("I click in the Cart link", () => {
-    Header.clickCartLink();
-    
-  });
+  
 
   Then("I should be in the Cart page", () => {
     CartPage.productsTable().should("be.visible");

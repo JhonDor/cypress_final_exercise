@@ -3,7 +3,6 @@ let pageLocators = {
     carouselRightArrow:'.carousel-control-next',
     carouselLeftArrow:'.carousel-control-prev',
     carouselImages:'.carousel-item',
-    carouselImage2:'.carousel-inner :nth-child(2)',
     carouselIndicators:'.carousel-indicators li',
     categories:'#itemc.list-group-item',
     firstProduct:'#tbodyid >:nth-child(1) .card-img-top',
@@ -36,28 +35,20 @@ let pageLocators = {
       return cy.get(pageLocators.firstProduct);;
     }
 
-    clickcarouselRightArrow() {
+    clickCarouselRightArrow() {
       return this.carouselRightArrow().click();
     }
 
-    clickcarouselLeftArrow() {
+    clickCarouselLeftArrow() {
       return this.carouselLeftArrow().click();
     }
 
-    clickcOnIndicator(index) {
+    clickOnIndicator(index) {
       return this.carouselIndicators().eq(index).click();
     }
-    
-    clickcOnLaptopsLink() {
-      return this.laptopsLink().click();
-    }
 
-    clickcOnFirstProduct() {
+    clickOnFirstProduct() {
       return this.firstProduct().click();
-    }
-
-    scrollToProducts(){
-      return this.firstProduct().scrollIntoView();
     }
   } 
   export default new HomePage();  

@@ -10,6 +10,9 @@
     "sanity": "npx cypress run -e TAGS=@sanity",
     "headless": "npx cypress run",
     "allure": "npx cypress run --env allure=true",
+    "allure:regression":"npx cypress run -e TAGS=@regression --env allure=true",
+    "allure:smoke":"npx cypress run -e TAGS=@smoke --env allure=true",
+    "allure:sanity":"npx cypress run -e TAGS=@sanity --env allure=true",
     "allure:results": "allure serve allure-results/"
   },
   "keywords": [],

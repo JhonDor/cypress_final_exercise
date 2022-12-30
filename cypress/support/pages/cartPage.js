@@ -58,20 +58,6 @@ class CartPage {
     return cy.get(pageLocators.purchaseAlertOkButton);
   }
 
-  clickOnpurchaseAlertOkButton(){
-    return this.purchaseAlertOkButton().click();
-  }
-  clickHomeLink() {
-    return this.homeLink().click();
-  }
-
-  clickCartLink() {
-    return this.cartLink().click();
-  }
-
-  clickcOnIndicator(index) {
-    return this.carouselIndicators().eq(index).click();
-  }
 
   clickOnDeleteButton() {
     return this.deleteButton().click();

@@ -1,5 +1,5 @@
 @products
-Feature: Verify selection is working
+Feature: Verify products section and the cart are working correctly
     As a user
     I want verify the categories Selection, product Selection, Adding product to cart, Buying cart and
     removing a prodcut from the cart
@@ -25,7 +25,7 @@ Feature: Verify selection is working
 @regression @smoke @products @addProduct
     Scenario: verify the correct addition of products to cart
         Given I add a product to my cart
-        When I go to the cart page
+        When I click in the Cart link
         Then the product should be in my cart
 
 @regression @smoke @products @addProduct
